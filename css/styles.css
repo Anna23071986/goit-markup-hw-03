@@ -151,10 +151,9 @@ header .container {
   background-color: #404bbf;
 }
 
-.second-section .container {
+.second-section {
   padding: 120px 0;
-
-  margin-left: 156px;
+  width: 1440px;
 }
 
 .visually-hidden {
