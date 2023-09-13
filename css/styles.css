@@ -6,10 +6,43 @@ body {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  min-width: 1158px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+header {
+  border-bottom: 1px solid #e7e9fc;
+  width: 1440px;
+}
+
+header .container {
+  display: inline-flex;
 }
 
 .logo {
@@ -20,10 +53,22 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
+  padding: 24px 76px 24px 156px;
 }
 
 .end-of-logo {
   color: #2e2f42;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-right: 332px;
 }
 
 .nav-link {
@@ -43,6 +88,15 @@ a {
   font-style: normal;
 }
 
+.contact-menu {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  gap: 40px;
+  padding-right: 156px;
+  justify-content: flex-end;
+}
+
 .contact-information {
   font-size: 16px;
   line-height: 1.5;
@@ -59,6 +113,7 @@ a {
   background-color: #2e2f42;
   color: #ffffff;
   text-align: center;
+  max-width: 1440px;
 }
 
 .main-title {
@@ -66,6 +121,7 @@ a {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  padding: 188px 472px 48px 472px;
 }
 
 .service {
@@ -76,6 +132,11 @@ a {
   letter-spacing: 0.04em;
   line-height: 1.5;
   cursor: pointer;
+  padding: 16px 32px;
+  margin-bottom: 188px;
+  border-radius: 4px;
+  gap: 10px;
+  box-shadow: 0px 4px 4px 0px #00000026;
 }
 
 .service:hover,
@@ -83,12 +144,40 @@ a {
   background-color: #404bbf;
 }
 
+.second-section .container {
+  width: 1440px;
+  padding: 120px 156px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.about-us-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* .about-us-item {
+  width: calc((100% - 72px) / 4);
+} */
+
 .title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .title-text {
@@ -100,6 +189,7 @@ a {
 
 .third-section {
   background-color: #f4f4fd;
+  width: 1440px;
 }
 
 .title-team {
@@ -110,10 +200,22 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
 .list-team {
-  background-color: #ffffff;
+  display: flex;
+  padding-left: 156px;
+  padding-bottom: 120px;
+}
+
+.item-team {
+  box-shadow: 0px 2px 1px 0px #2e2f4214;
+  box-shadow: 0px 1px 1px 0px #2e2f4229;
+  box-shadow: 0px 1px 6px 0px #2e2f4214;
+  margin-right: 24px;
 }
 
 .title-name {
@@ -124,6 +226,7 @@ a {
   text-align: center;
   background-color: #ffffff;
   color: #2e2f42;
+  padding-top: 32px;
 }
 
 .title-text-profession {
@@ -133,6 +236,22 @@ a {
   text-align: center;
   background-color: #ffffff;
   color: #434455;
+  padding-bottom: 32px;
+  padding-top: 8px;
+  border-radius: 0 0 4px 4px;
+}
+
+.fourth-section {
+  width: 1440px;
+}
+
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+  padding-left: 156px;
+  padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -143,6 +262,13 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
+  text-align: center;
+}
+
+.item-portfolio {
+  border: 1px solid #e7e9fc;
 }
 
 .title-description {
@@ -151,17 +277,22 @@ a {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding: 32px 16px 0 16px;
 }
 
 .title-text-direction {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 16px;
+  padding: 8px 16px 32px 16px;
 }
 
 .tagline {
+  width: 1440px;
   background-color: #2e2f42;
   color: #f4f4fd;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -172,4 +303,5 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 16px 1020px 0 156px;
 }
