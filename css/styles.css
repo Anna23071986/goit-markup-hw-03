@@ -36,7 +36,6 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  width: 1440px;
 }
 
 header .container {
@@ -61,12 +60,12 @@ header .container {
 .page-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .nav-list {
   display: flex;
   gap: 40px;
-  padding-right: 332px;
 }
 
 .nav-link {
@@ -76,6 +75,8 @@ header .container {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+
+  display: block;
 }
 
 .nav-link:hover,
@@ -85,12 +86,12 @@ header .container {
 
 .contact-block {
   font-style: normal;
+  align-items: center;
+  display: flex;
 }
 
 .contact-menu {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
   gap: 40px;
 }
 
@@ -110,9 +111,7 @@ header .container {
   background-color: #2e2f42;
   color: #ffffff;
   padding: 188px 0;
-
   text-align: center;
-  width: 1440px;
 }
 
 .main-title {
@@ -121,7 +120,6 @@ header .container {
   line-height: 1.07;
   letter-spacing: 0.02em;
   max-width: 496px;
-
   margin-left: 316px;
 }
 
@@ -153,7 +151,6 @@ header .container {
 
 .second-section {
   padding: 120px 0;
-  width: 1440px;
 }
 
 .visually-hidden {
@@ -197,11 +194,6 @@ header .container {
 .third-section {
   background-color: #f4f4fd;
   padding: 120px 0;
-  width: 1440px;
-}
-
-.third-section .container {
-  margin-left: 156px;
 }
 
 .title-team {
@@ -259,10 +251,6 @@ header .container {
   padding-bottom: 120px;
 }
 
-.fourth-section .container {
-  margin-left: 156px;
-}
-
 .portfolio-title {
   color: #2e2f42;
   font-weight: 700;
@@ -307,7 +295,6 @@ header .container {
 }
 
 .tagline {
-  width: 1440px;
   background-color: #2e2f42;
   color: #f4f4fd;
   padding: 100px 0;
@@ -316,6 +303,7 @@ header .container {
 .tagline-logo {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 .footer-logo {
